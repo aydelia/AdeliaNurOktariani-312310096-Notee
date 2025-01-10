@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FAFAFA">
+
+    <ImageView
+        android:id="@+id/ivLoginIllustration"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/gambar_masuk" />
+
+    <TextView
+        android:id="@+id/tvLoginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivLoginIllustration"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Masuk"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#2D0C57" />
+
+    <TextView
+        android:id="@+id/tvLoginSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvLoginTitle"
+        android:layout_centerHorizontal="true"
+        android:text="Masuk untuk melanjutkan"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etLoginUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvLoginSubtitle"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bg_input"
+        android:drawableStart="@drawable/icon_pengguna"
+        android:drawablePadding="8dp"
+        android:hint="Nama Pengguna"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/etLoginPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etLoginUsername"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_input"
+        android:drawableStart="@drawable/icon_kata_sandi"
+        android:drawablePadding="8dp"
+        android:hint="Kata Sandi"
+        android:inputType="textPassword"
+        android:padding="12dp" />
+
+    <Button
+        android:id="@+id/btnMasuk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etLoginPassword"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_masuk"
+        android:text="MASUK"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
